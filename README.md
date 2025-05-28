@@ -1,52 +1,51 @@
-# FinMark Auth Service – Milestone 2
+FinMark Auth Service – Milestone 2
 
-This project is the login feature for the FinMark platform. It is part of the software development team's output for Milestone 2. This system follows the design and security plans proposed in Milestone 1.
+This project implements the login and registration feature for the FinMark platform. It serves as the software development team's functional output for Milestone 2 and follows the modular design and security practices outlined in Milestone 1.
 
----
+** Feature Overview
+Registers users using name, email, and password
 
-## Feature Built
+1. Accepts login via email and password
+2. Uses bcrypt for password hashing
+3. Returns a signed JWT token on successful login
+4. Stores user data in MongoDB using Mongoose
+5. Follows a modular folder structure for scalability
 
-- Accepts user login using email and password
-- Uses bcrypt to hash passwords before saving
-- Returns a secure JWT token after login
-- Connects to MongoDB to store user records
-- Follows a clean folder structure for maintainability
+** Based on Milestone 1 Architecture
 
----
+1. Implements a modular microservices design as proposed
+2. Applies secure authentication using bcrypt and JWT
+3. Includes role-based token support for future access control
+4. Uses Node.js, Express, MongoDB, and other stack components as planned
 
-## From Milestone 1
+** Tech Stack
 
-- We proposed a modular architecture. This login module is one of those modules.
-- We planned for secure user authentication. This service uses bcrypt and JWT.
-- We described role-based access. The token includes the user’s role.
-- We used Express, MongoDB, and Node.js, as stated in the milestone.
+Node.js
+Express.js
+MongoDB (via Mongoose)
+bcryptjs
+jsonwebtoken
+dotenv
 
----
+**How to Run the App
 
-## Stack Used
-
-- Node.js  
-- Express  
-- MongoDB (via Mongoose)  
-- bcryptjs  
-- jsonwebtoken  
-- dotenv
-
----
-
-## How to Run
-
-1. Clone this repository to your local machine.
+1. Clone the repository to your local machine.
 2. Open the project folder and run npm install to install all required packages.
-3. In the root of the project, create a file named .env. Inside this file, add the following lines exactly:
-PORT=5000
-MONGO_URI=mongodb://localhost:27017/finmark-auth
+3. In the root of the project, create a file named .env with the following content:
+PORT=5000  
+MONGO_URI=mongodb://localhost:27017/finmark-auth  
 JWT_SECRET=secretonly123
-4. Start the server by typing npm start in the terminal.
-5. To create the test user, run the script named createUser.js found in the scripts folder.
-6. To test the login function, run the test-login.js script. This will return a token if the login is successful. You can then use that token for authenticated requests.
+4. Start the server by running npm start in the terminal.
 
+**Milestone 2 Notes
+1. What Was Set Up and Why
+The authentication service was built as the first microservice in the FinMark system. It handles user registration and login using Node.js, Express, MongoDB, and JWT. These are essential components for secure user identity management in a microservices-based architecture.
 
+2. Challenges Encountered
+Some early issues included handling asynchronous database operations and configuring the JWT token logic. We also spent time improving input validation and resolving token expiration behavior.
 
+3. What Worked Well
+The route setup, password hashing using bcrypt, and JWT token handling worked reliably. MongoDB integration using Mongoose was successful, and the use of middleware helped maintain clean code structure.
 
-
+4. What Needs Refinement
+While functional for Milestone 2, the system can be improved with additional features like rate limiting, refresh token handling, and stricter input validation. These will be considered in later milestones.

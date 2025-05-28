@@ -37,7 +37,7 @@ if (missingEnvVars.length > 0) {
   console.error('2. The file contains all required variables');
   console.error('3. There are no spaces around the = signs');
   console.error('4. There are no quotes around the values');
-  console.error('\nExample .env content:');
+
   console.error('PORT=5000');
   console.error('MONGO_URI=mongodb://localhost:27017/finmark-auth');
   console.error('JWT_SECRET=your_secret_here\n');
