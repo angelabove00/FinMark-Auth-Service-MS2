@@ -36,6 +36,7 @@ Registers users using name, email, and password
 PORT=5000  
 MONGO_URI=mongodb://localhost:27017/finmark-auth  
 JWT_SECRET=secretonly123
+
 5. Start the server by running npm start in the terminal.
 
 **Milestone 2 Notes
