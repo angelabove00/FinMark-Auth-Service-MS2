@@ -30,14 +30,9 @@ Registers users using name, email, and password
 **How to Run the App
 
 1. Clone the repository to your local machine.
-2. Open the project folder and run npm install to install all required packages.
-3. In the root of the project, create a file named .env with the following content:
-   
-PORT=5000  
-MONGO_URI=mongodb://localhost:27017/finmark-auth  
-JWT_SECRET=secretonly123
-
-5. Start the server by running npm start in the terminal.
+2. Open the project folder and run npm install to install all required dependencies.
+3. In the root of the project, create a file named .env. You can refer to the provided .env.example file for the required environment variables. The file should include the following:
+4. Start the server by running npm start in the terminal.
 
 **Milestone 2 Notes
 1. What Was Set Up and Why
