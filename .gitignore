@@ -1,3 +1,19 @@
+# Node modules 
 node_modules/
+
+# Environment variables 
 .env
+
+# Log files
 *.log
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Coverage/test output
+coverage/
+.nyc_output/
+
+# VS Code settings 
+.vscode/
