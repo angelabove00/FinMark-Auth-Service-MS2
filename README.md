@@ -20,12 +20,12 @@ Registers users using name, email, and password
 
 ** Tech Stack
 
-Node.js
-Express.js
-MongoDB (via Mongoose)
-bcryptjs
-jsonwebtoken
-dotenv
+- Node.js
+- Express.js
+- MongoDB (via Mongoose)
+- bcryptjs
+- jsonwebtoken
+- dotenv
 
 **How to Run the App
 
