@@ -36,13 +36,10 @@ Registers users using name, email, and password
 
 **Milestone 2 Notes
 1. What Was Set Up and Why
-The authentication service was built as the first microservice in the FinMark system. It handles user registration and login using Node.js, Express, MongoDB, and JWT. These are essential components for secure user identity management in a microservices-based architecture.
-
+- The authentication service was built as the first microservice in the FinMark system. It handles user registration and login using Node.js, Express, MongoDB, and JWT. These are essential components for secure user identity management in a microservices-based architecture.
 2. Challenges Encountered
-Some early issues included handling asynchronous database operations and configuring the JWT token logic. We also spent time improving input validation and resolving token expiration behavior.
-
+- Some early issues included handling asynchronous database operations and configuring the JWT token logic. We also spent time improving input validation and resolving token expiration behavior.
 3. What Worked Well
-The route setup, password hashing using bcrypt, and JWT token handling worked reliably. MongoDB integration using Mongoose was successful, and the use of middleware helped maintain clean code structure.
-
-4. What Needs Refinement
-While functional for Milestone 2, the system can be improved with additional features like rate limiting, refresh token handling, and stricter input validation. These will be considered in later milestones.
+- The route setup, password hashing using bcrypt, and JWT token handling worked reliably. MongoDB integration using Mongoose was successful, and the use of middleware helped maintain clean code structure.
+4.. What Needs Refinement
+- While functional for Milestone 2, the system can be improved with additional features like rate limiting, refresh token handling, and stricter input validation. These will be considered in later milestones.
